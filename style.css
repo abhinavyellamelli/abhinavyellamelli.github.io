@@ -1,20 +1,41 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif;
+
     text-decoration: none;
-    scroll-behavior: smooth;
     list-style: none;
+
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    background: white;
+    color: #111111;
 }
 
 
-/* ================= HEADER ================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
-header {
+.header {
     position: fixed;
+
     top: 1rem;
     left: 50%;
+
     transform: translateX(-50%);
 
     display: flex;
@@ -23,221 +44,200 @@ header {
 
     gap: 4rem;
 
-    background-color: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(12px);
+    width: max-content;
 
-    color: white;
+    background-color: rgba(10, 10, 10, 0.88);
+
+    backdrop-filter: blur(12px);
 
     padding: 0.8rem 1.8rem;
 
     border: 1px solid rgba(255, 255, 255, 0.15);
+
     border-radius: 3rem;
 
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35);
 
     z-index: 1000;
 }
 
 
-/* ================= LOGO ================= */
+/* =========================================================
+   LOGO
+========================================================= */
 
 .logo {
     color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-wrap: nowrap;
 
-    transition: 0.3s ease-in-out;
+    font-size: 1.3rem;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
 }
 
 .logo:hover {
+    color: #00F5D4;
+
     transform: scale(1.05);
 }
 
 
-/* ================= NAVIGATION ================= */
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 .nav-links {
     display: flex;
+
     gap: 2rem;
 }
 
-li a {
+.nav-links li a {
     position: relative;
 
     color: rgba(255, 255, 255, 0.85);
+
+    font-size: 0.95rem;
+
     font-weight: 400;
 
     transition: 0.3s ease;
 }
 
-li a:hover {
-    color: white;
+.nav-links li a:hover {
+    color: #00F5D4;
 }
 
 
-/* ================= NAVIGATION UNDERLINE ================= */
+/* NAVIGATION UNDERLINE */
 
-li a::before {
+.nav-links li a::before {
+
+    content: "";
+
     position: absolute;
-    content: '';
 
     width: 0;
-    left: 50%;
-    transform: translateX(-50%);
 
     height: 3px;
+
+    left: 50%;
+
     bottom: -8px;
+
+    transform: translateX(-50%);
 
     border-radius: 1rem;
 
-    transition: 0.3s ease-in-out;
-
     background: linear-gradient(to right,
             #00C9A7,
             #00F5D4);
+
+    transition: 0.3s ease;
 }
 
-li a:hover::before {
+.nav-links li a:hover::before {
     width: 100%;
 }
 
 
-/* ================= GITHUB BUTTON ================= */
+/* =========================================================
+   GITHUB BUTTON
+========================================================= */
 
 .visit-btn {
+
     padding: 0.75rem 1.5rem;
 
-    border-radius: 3rem;
     border: none;
 
-    font-weight: 500;
-    font-size: 0.95rem;
+    border-radius: 3rem;
 
     color: white;
-    cursor: pointer;
 
-    text-wrap: nowrap;
+    font-size: 0.95rem;
 
-    transition: 0.3s ease-in-out;
+    font-weight: 500;
 
     background: linear-gradient(to right,
             #00C9A7,
             #00F5D4);
 
-    box-shadow: 0 4px 15px rgba(0, 201, 167, 0.25);
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.3s ease;
 }
 
 .visit-btn:hover {
+
     transform: translateY(-2px);
 
-    background: linear-gradient(to right,
-            #00F5D4,
-            #00C9A7);
-
-    box-shadow: 0 6px 20px rgba(0, 201, 167, 0.4);
+    box-shadow:
+        0 6px 20px rgba(0, 201, 167, 0.4);
 }
 
-
-/* ================= MOBILE MENU ================= */
-
-#menu-icon {
-    font-size: 2rem;
-    display: none;
-}
 
 /* =========================================================
-   ABOUT SECTION
+   MAIN PROFILE LAYOUT
 ========================================================= */
 
-.about {
-    min-height: 100vh;
+.profile-layout {
+
     width: 100%;
 
-    padding: 8rem 12%;
+    max-width: 1400px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
 
-    position: relative;
-    overflow: hidden;
+    padding: 0 8%;
 
-    background: white;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: start;
 }
 
 
 /* =========================================================
-   SUBTLE BACKGROUND GLOW
+   LEFT SIDE — SINGLE IMAGE
 ========================================================= */
 
-.about::before {
+.profile-image-container {
+
+    position: sticky;
+
+    top: 0;
+
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    z-index: 2;
+}
+
+
+/* IMAGE GLOW */
+
+.profile-image-container::before {
+
     content: "";
 
     position: absolute;
 
-    width: 500px;
-    height: 500px;
+    width: 360px;
 
-    border-radius: 50%;
-
-    background: rgba(0, 201, 167, 0.07);
-
-    filter: blur(80px);
-
-    left: -200px;
-    top: 25%;
-
-    z-index: 0;
-}
-
-
-/* =========================================================
-   CONTAINER
-========================================================= */
-
-.about-container {
-    width: 100%;
-    max-width: 1200px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 7rem;
-
-    position: relative;
-    z-index: 1;
-}
-
-
-/* =========================================================
-   PROFILE IMAGE
-========================================================= */
-
-.about-image {
-    position: relative;
-
-    width: 340px;
-    height: 340px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-shrink: 0;
-}
-
-
-/* Turquoise glow */
-
-.about-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
+    height: 360px;
 
     border-radius: 50%;
 
@@ -247,18 +247,18 @@ li a:hover::before {
 
     opacity: 0.18;
 
-    filter: blur(25px);
+    filter: blur(30px);
 
-    z-index: 0;
+    z-index: -1;
 }
 
 
-/* Profile picture */
+/* PROFILE IMAGE */
 
-.about-image img {
-    position: relative;
+.profile-image-container img {
 
     width: 320px;
+
     height: 320px;
 
     object-fit: cover;
@@ -272,25 +272,35 @@ li a:hover::before {
     box-shadow:
         0 10px 35px rgba(0, 150, 130, 0.18);
 
-    z-index: 1;
-
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
+.profile-image-container img:hover {
 
-.about-image img:hover {
     transform: scale(1.03);
 
     box-shadow:
-        0 15px 45px rgba(0, 201, 167, 0.28);
+        0 15px 45px rgba(0, 201, 167, 0.3);
 }
 
 
 /* =========================================================
-   CONTENT
+   RIGHT SIDE CONTENT
 ========================================================= */
 
-.about-content {
+.content-container {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HOME SECTION
+========================================================= */
+
+.home-section {
+
+    min-height: 100vh;
+
     display: flex;
 
     flex-direction: column;
@@ -301,26 +311,23 @@ li a:hover::before {
 
     text-align: center;
 
-    gap: 1rem;
-
-    max-width: 700px;
+    padding: 8rem 2rem;
 }
 
 
 /* =========================================================
-   GREETING
+   HOME GREETING
 ========================================================= */
 
 .about-greeting {
-    margin: 0;
 
-    color: #555555 !important;
+    margin: 0 0 0.5rem 0;
+
+    color: #555555;
 
     font-size: 1.5rem;
 
     font-weight: 400;
-
-    opacity: 1 !important;
 }
 
 
@@ -329,19 +336,20 @@ li a:hover::before {
 ========================================================= */
 
 .about-name {
+
     margin: 0;
 
-    color: #111111 !important;
+    color: #111111;
 
-    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-size: clamp(3rem,
+            5vw,
+            4.5rem);
 
     font-weight: 700;
 
     line-height: 1.1;
 
     white-space: nowrap;
-
-    opacity: 1 !important;
 }
 
 
@@ -350,34 +358,31 @@ li a:hover::before {
 ========================================================= */
 
 .about-role {
+
     display: flex;
 
     flex-direction: column;
 
     align-items: center;
 
-    justify-content: center;
-
     gap: 0.15rem;
 
-    margin-top: 0.3rem;
+    margin-top: 1rem;
 }
 
-
 .about-role p {
+
     margin: 0;
 
-    color: #00A98F !important;
+    color: #00A98F;
 
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 
     font-weight: 600;
 
     line-height: 1.4;
 
     white-space: nowrap;
-
-    opacity: 1 !important;
 }
 
 
@@ -386,6 +391,7 @@ li a:hover::before {
 ========================================================= */
 
 .about-buttons {
+
     display: flex;
 
     align-items: center;
@@ -393,52 +399,46 @@ li a:hover::before {
 
     gap: 1rem;
 
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
-
 .about-button {
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
 
     min-width: 135px;
 
     padding: 0.8rem 1.6rem;
 
-    border-radius: 3rem;
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
 
     border: 2px solid #00A98F;
 
+    border-radius: 3rem;
+
     background: white;
 
-    color: #222222 !important;
+    color: #222222;
 
     font-size: 1rem;
 
     font-weight: 500;
 
-    text-decoration: none !important;
-
-    white-space: nowrap;
-
     cursor: pointer;
 
-    opacity: 1 !important;
-
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
-
 .about-button:hover {
+
+    color: #06201B;
+
+    border-color: transparent;
+
     background: linear-gradient(to right,
             #00C9A7,
             #00F5D4);
-
-    color: #06201B !important;
-
-    border-color: transparent;
 
     transform: translateY(-3px);
 
@@ -452,6 +452,7 @@ li a:hover::before {
 ========================================================= */
 
 .about-socials {
+
     display: flex;
 
     align-items: center;
@@ -459,11 +460,11 @@ li a:hover::before {
 
     gap: 1.2rem;
 
-    margin-top: 0.8rem;
+    margin-top: 1rem;
 }
 
-
 .about-social-link {
+
     width: 48px;
     height: 48px;
 
@@ -472,34 +473,28 @@ li a:hover::before {
     align-items: center;
     justify-content: center;
 
-    border-radius: 50%;
-
     border: 2px solid #00A98F;
+
+    border-radius: 50%;
 
     background: white;
 
-    color: #222222 !important;
+    color: #222222;
 
-    text-decoration: none !important;
-
-    opacity: 1 !important;
-
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
-
 .about-social-link i {
-    display: block;
-
-    color: #222222 !important;
 
     font-size: 1.5rem;
 
-    opacity: 1 !important;
+    color: #222222;
+
+    transition: 0.3s ease;
 }
 
-
 .about-social-link:hover {
+
     background: #00C9A7;
 
     border-color: #00C9A7;
@@ -510,11 +505,289 @@ li a:hover::before {
         0 6px 18px rgba(0, 169, 143, 0.25);
 }
 
-
 .about-social-link:hover i {
-    color: white !important;
+    color: white;
 }
 
 /* =========================================================
-   EXPERIENCE SECTION
+   CV ICON
 ========================================================= */
+
+.cv-icon span {
+    font-size: 0.85rem;
+
+    font-weight: 700;
+
+    color: #222222;
+
+    letter-spacing: 0.5px;
+
+    transition: 0.3s ease;
+}
+
+
+.cv-icon:hover span {
+    color: white;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.about-section {
+
+    min-height: 100vh;
+
+    padding: 3rem 2rem 4rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    gap: 0.9rem;
+
+    scroll-margin-top: 70px;
+}
+
+
+/* =========================================================
+   ABOUT HEADING
+========================================================= */
+
+.about-section h2 {
+
+    margin: 0 0 0.3rem 0;
+
+    color: #111111;
+
+    font-size: 3.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================================
+   ABOUT INTRODUCTION
+========================================================= */
+
+.about-section>p {
+
+    margin: 0 0 0.3rem 0;
+
+    max-width: 650px;
+
+    color: #555555;
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   ABOUT BLOCKS
+========================================================= */
+
+.about-block {
+
+    width: 100%;
+
+    padding: 0.9rem 1.2rem;
+
+    border-left: 3px solid #00C9A7;
+
+    border-radius: 0 1rem 1rem 0;
+
+    background: rgba(0,
+            201,
+            167,
+            0.04);
+}
+
+
+/* BLOCK HEADING */
+
+.about-block h3 {
+
+    margin: 0 0 0.35rem 0;
+
+    color: #111111;
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+}
+
+
+/* ICON */
+
+.about-block h3 i {
+
+    margin-right: 0.5rem;
+
+    color: #00A98F;
+}
+
+
+/* BLOCK TEXT */
+
+.about-block p {
+
+    margin: 0 0 0.45rem 0;
+
+    color: #666666;
+
+    font-size: 0.92rem;
+
+    line-height: 1.5;
+}
+
+.about-block p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* STRONG TEXT */
+
+.about-block strong {
+    color: #333333;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        gap: 2rem;
+    }
+
+
+    .profile-layout {
+
+        grid-template-columns: 1fr;
+
+        padding: 0 7%;
+    }
+
+
+    .profile-image-container {
+
+        position: relative;
+
+        top: auto;
+
+        height: auto;
+
+        min-height: 55vh;
+
+        padding-top: 8rem;
+    }
+
+
+    .content-container {
+        width: 100%;
+    }
+
+
+    .home-section {
+
+        min-height: 80vh;
+
+        padding-top: 3rem;
+    }
+
+
+    .about-section {
+
+        min-height: 80vh;
+
+        padding-top: 3rem;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+
+        width: 92%;
+
+        gap: 1rem;
+
+        padding: 0.7rem 1rem;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .visit-btn {
+
+        font-size: 0.85rem;
+
+        padding: 0.65rem 1rem;
+    }
+
+
+    .profile-image-container img {
+
+        width: 250px;
+
+        height: 250px;
+    }
+
+
+    .profile-image-container::before {
+
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .about-name {
+
+        font-size: 2.7rem;
+
+        white-space: normal;
+    }
+
+
+    .about-role p {
+
+        font-size: 1.25rem;
+
+        white-space: normal;
+    }
+
+
+    .about-buttons {
+        flex-direction: column;
+    }
+
+
+    .about-section {
+
+        padding: 3rem 1.5rem 4rem;
+    }
+
+
+    .about-section h2 {
+
+        font-size: 2.7rem;
+    }
+}
