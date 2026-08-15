@@ -9,71 +9,123 @@
 
     <title>Abhinav Yellamelli's Portfolio</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
 
-    <!-- Poppins Font -->
+    <!-- =====================================================
+         GOOGLE FONT — POPPINS
+    ====================================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <!-- Website CSS -->
-    <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome -->
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
 
-    <!-- HEADER -->
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
 
     <header class="header">
 
+        <!-- Logo / Home -->
         <a href="#home" class="logo">
-            Abhinav Yellamelli
+            <span>Abhinav Yellamelli</span>
         </a>
 
+
+        <!-- Navigation -->
         <ul class="nav-links">
 
             <li>
-                <a href="#about">About</a>
+                <a href="#about">
+                    About
+                </a>
             </li>
 
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience">
+                    Experience
+                </a>
             </li>
 
             <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">
+                    Projects
+                </a>
             </li>
 
             <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills">
+                    Skills
+                </a>
             </li>
 
             <li>
-                <a href="#contact">Contact</a>
+                <a href="#Publications">
+                    Publications
+                </a>
             </li>
 
         </ul>
 
+
+        <!-- Mobile Menu -->
+        <i class="fa-solid fa-bars" id="menu-icon">
+        </i>
+
+
+        <!-- GitHub -->
         <a href="https://github.com/abhinavyellamelli" target="_blank" class="visit-btn">
+
             Visit GitHub
+
         </a>
 
     </header>
 
 
-    <!-- MAIN PROFILE AREA -->
 
-    <main class="profile-layout">
+    <!-- =====================================================
+         HOME + ABOUT AREA
+         
+         IMPORTANT:
+         The photo exists ONLY ONCE here.
+         It is shared by Home and About.
+    ====================================================== -->
+
+    <div class="profile-layout">
 
 
-        <!-- ONE AND ONLY ONE IMAGE -->
+        <!-- =================================================
+             LEFT SIDE — SINGLE PROFILE PHOTO
+        ================================================== -->
 
         <div class="profile-image-container">
 
@@ -82,22 +134,30 @@
         </div>
 
 
-        <!-- RIGHT SIDE CONTENT -->
+
+        <!-- =================================================
+             RIGHT SIDE — HOME + ABOUT
+        ================================================== -->
 
         <div class="content-container">
 
 
-            <!-- HOME -->
+            <!-- =================================================
+                 HOME SECTION
+            ================================================== -->
 
             <section id="home" class="home-section">
+
 
                 <p class="about-greeting">
                     Hi, I'm
                 </p>
 
+
                 <h1 class="about-name">
                     Abhinav Yellamelli
                 </h1>
+
 
                 <div class="about-role">
 
@@ -111,11 +171,15 @@
 
                 </div>
 
+
+                <!-- Social / Contact Icons -->
+
                 <div class="about-socials">
 
+
                     <!-- GitHub -->
-                    <a href="https://github.com/abhinavyellamelli" target="_blank" class="about-social-link"
-                        aria-label="GitHub">
+                    <a href="https://github.com/abhinavyellamelli" class="about-social-link" aria-label="GitHub"
+                        target="_blank" rel="noopener noreferrer">
 
                         <i class="fa-brands fa-github"></i>
 
@@ -123,7 +187,8 @@
 
 
                     <!-- LinkedIn -->
-                    <a href="#" target="_blank" class="about-social-link" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/abhinavyellamelli/" class="about-social-link"
+                        aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
 
                         <i class="fa-brands fa-linkedin"></i>
 
@@ -131,7 +196,8 @@
 
 
                     <!-- Email -->
-                    <a href="mailto:abhinavyellamelli234@gmail.com" class="about-social-link" aria-label="Email">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abhinavyellamelli234@gmail.com&su=Portfolio%20Inquiry"
+                        class="about-social-link" aria-label="Email" target="_blank" rel="noopener noreferrer">
 
                         <i class="fa-solid fa-envelope"></i>
 
@@ -139,9 +205,10 @@
 
 
                     <!-- CV -->
-                    <a href="#" class="about-social-link cv-icon" aria-label="Download CV">
+                    <a href="Abhinav_Yellamelli_Resume.pdf" class="about-social-link" aria-label="Resume"
+                        target="_blank" rel="noopener noreferrer">
 
-                        <span>CV</span>
+                        <span class="cv-icon">CV</span>
 
                     </a>
 
@@ -150,72 +217,644 @@
             </section>
 
 
-            <!-- ABOUT -->
+
+            <!-- =================================================
+                 ABOUT SECTION
+            ================================================== -->
 
             <section id="about" class="about-section">
+
 
                 <h2>
                     About Me
                 </h2>
 
+
+                <!-- Introduction -->
+
                 <p>
+
                     I am an M.Tech student specializing in Electric
                     Vehicles at IIT Madras, with a background in
-                    Electrical and Electronics Engineering.
+                    Electrical and Electronics Engineering and
+                    industrial experience in electrical and
+                    instrumentation systems.
+
                 </p>
 
 
+
+                <!-- =================================================
+                     RESEARCH INTERESTS
+                ================================================== -->
+
                 <div class="about-block">
 
                     <h3>
-                        <i class="fa-solid fa-flask"></i>
+
+                        <i class="fa-solid fa-microscope"></i>
+
                         Research Interests
+
                     </h3>
 
+
                     <p>
-                        My research interests include Battery Management
-                        Systems, battery state estimation, electric
-                        vehicle powertrains, energy storage systems,
-                        power electronics and automotive embedded systems.
+
+                        My interests include Battery Management
+                        Systems, battery modelling, State of Charge
+                        and State of Health estimation, electric
+                        vehicle powertrains, embedded systems and
+                        intelligent control techniques.
+
                     </p>
 
                 </div>
 
 
+
+                <!-- =================================================
+                     EDUCATION
+                ================================================== -->
+
                 <div class="about-block">
 
                     <h3>
+
                         <i class="fa-solid fa-graduation-cap"></i>
+
                         Education
+
                     </h3>
 
+
                     <p>
+
                         <strong>
                             M.Tech in Electric Vehicles, 2026 - Present
                         </strong>
+
                         <br>
+
                         Indian Institute of Technology Madras, Chennai
+
                     </p>
 
+
                     <p>
+
                         <strong>
                             B.Tech in Electrical & Electronics Engineering, 2020 - 2024
                         </strong>
+
                         <br>
-                        Visvesvaraya National Institute of Technology, Nagpur
+
+                        Visvesvaraya National Institute of Technology,
+                        Nagpur
+
                     </p>
 
                 </div>
+
 
             </section>
 
 
         </div>
 
-    </main>
+    </div>
 
 
+
+    <!-- =====================================================
+         EXPERIENCE SECTION
+         
+         IMPORTANT:
+         This is OUTSIDE profile-layout.
+         Therefore the profile photo will NOT appear here.
+    ====================================================== -->
+
+    <section id="experience" class="experience-section">
+
+
+        <div class="experience-container">
+
+
+            <!-- Heading -->
+
+            <h2 class="experience-title">
+                Experience
+            </h2>
+
+
+
+            <!-- =================================================
+                 EXPERIENCE CARD — JINDAL STAINLESS
+            ================================================== -->
+
+            <div class="experience-card">
+
+
+                <!-- Company Logo -->
+
+                <div class="experience-logo">
+
+                    <img src="Jindal Stainless Logo.jpeg" alt="Jindal Stainless Limited Logo">
+
+                </div>
+
+
+
+                <!-- Experience Details -->
+
+                <div class="experience-details">
+
+
+                    <!-- Job Title -->
+
+                    <h3 class="experience-job-title">
+
+                        Graduate Engineer Trainee
+
+                    </h3>
+
+
+                    <!-- Company -->
+
+                    <h4 class="experience-company">
+
+                        Jindal Stainless Limited
+
+                    </h4>
+
+
+                    <!-- Date + Location -->
+
+                    <div class="experience-meta">
+
+                        <span>
+
+                            Aug 2024 – May 2026
+
+                        </span>
+
+
+                        <span>
+
+                            Hisar, Haryana, India
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <ul class="experience-description">
+
+                        <li>
+                            Preventive and breakdown maintenance of electrical
+                            and instrumentation systems in the Steckel Hot
+                            Rolling Mill.
+                        </li>
+
+                        <li>
+                            Executed projects involving IP cameras, MCC
+                            replacement, burner ignition systems, and
+                            shot blasting drives.
+                        </li>
+
+                        <li>
+                            Supported the conversion of four reheating furnaces
+                            from furnace oil to natural gas.
+                        </li>
+
+                        <li>
+                            Calibrated field instruments and conducted SAP-based
+                            instrumentation asset audits and documentation.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <!-- =================================================
+                 EXPERIENCE CARD — SDSTPS
+            ================================================== -->
+
+            <div class="experience-card">
+
+
+                <!-- Company Logo -->
+
+                <div class="experience-logo">
+
+                    <img src="APGENCO Logo.jpeg" alt="APGENCO Logo">
+
+                </div>
+
+
+
+                <!-- Experience Details -->
+
+                <div class="experience-details">
+
+
+                    <!-- Job Title -->
+
+                    <h3 class="experience-job-title">
+
+                        Intern
+
+                    </h3>
+
+
+                    <!-- Company -->
+
+                    <h4 class="experience-company">
+
+                        SDSTPS, APGENCO
+
+                    </h4>
+
+
+                    <!-- Date + Location -->
+
+                    <div class="experience-meta">
+
+                        <span>
+
+                            May 2024 – July 2024
+
+                        </span>
+
+
+                        <span>
+
+                            Nellore, Andhra Pradesh, India
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <ul class="experience-description">
+
+                        <li>
+                            Assisted engineers in preventive maintenance and monitoring of 800 MW thermal power plant
+                            electrical equipment.
+                        </li>
+
+                        <li>
+                            Observed operation and maintenance of HT/LT switchgear, transformers, induction motors,
+                            VFDs, and auxiliary
+                            systems.
+                        </li>
+
+                        <li>
+                            Learned industrial safety procedures and power plant maintenance practices through field
+                            inspections.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- =================================================
+                 EXPERIENCE CARD — IOCL
+            ================================================== -->
+
+            <div class="experience-card">
+
+
+                <!-- Company Logo -->
+
+                <div class="experience-logo">
+
+                    <img src="Iocl Logo.jpeg" alt="Iocl Logo">
+
+                </div>
+
+
+
+                <!-- Experience Details -->
+
+                <div class="experience-details">
+
+
+                    <!-- Job Title -->
+
+                    <h3 class="experience-job-title">
+
+                        Intern
+
+                    </h3>
+
+
+                    <!-- Company -->
+
+                    <h4 class="experience-company">
+
+                        Indian Oil Corporation Ltd
+
+                    </h4>
+
+
+                    <!-- Date + Location -->
+
+                    <div class="experience-meta">
+
+                        <span>
+
+                            Dec 2022 – Jan 2023
+
+                        </span>
+
+
+                        <span>
+
+                            Haldia, West Bengal, India
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <ul class="experience-description">
+
+                        <li>
+                            Studied the 132 kV and 32 kV Gas Insulated Switchgear (GIS) network used in refinery power
+                            distribution.
+                        </li>
+
+                        <li>
+                            Compared GIS and AIS substations based on reliability, space utilization, maintenance, and
+                            operational safety.
+                        </li>
+
+                        <li>
+                            Analyzed single-line diagrams, protection schemes, and power factor improvement techniques
+                            for refinery electrical
+                            systems.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+            <!-- =================================================
+                 EXPERIENCE CARD — VTPS
+            ================================================== -->
+
+            <div class="experience-card">
+
+
+                <!-- Company Logo -->
+
+                <div class="experience-logo">
+
+                    <img src="Apgenco Logo.jpeg" alt="Apgenco Logo">
+
+                </div>
+
+
+
+                <!-- Experience Details -->
+
+                <div class="experience-details">
+
+
+                    <!-- Job Title -->
+
+                    <h3 class="experience-job-title">
+
+                        Intern
+
+                    </h3>
+
+
+                    <!-- Company -->
+
+                    <h4 class="experience-company">
+
+                        VTPS, APGENCO
+
+                    </h4>
+
+
+                    <!-- Date + Location -->
+
+                    <div class="experience-meta">
+
+                        <span>
+
+                            May 2022 – July 2022
+
+                        </span>
+
+
+                        <span>
+
+                            Vijayawada, Andhra Pradesh, India
+
+                        </span>
+
+                    </div>
+
+
+                    <!-- Description -->
+
+                    <ul class="experience-description">
+
+                        <li>
+                            Underwent practical training on thermal power plant operation, power generation cycle, and
+                            auxiliary systems.
+                        </li>
+
+                        <li>
+                            Learned the working principles of boilers, turbines, generators, transformers, and
+                            protection systems.
+                        </li>
+
+                        <li>
+                            Observed maintenance practices for electrical equipment used in large-scale power
+                            generation.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================================
+     PROJECTS SECTION
+========================================================= -->
+
+    <section id="projects" class="projects-section">
+
+        <div class="projects-container">
+
+            <div class="projects-header">
+                <h2 class="projects-title">Projects</h2>
+            </div>
+
+
+            <!-- =================================================
+             PROJECT 1
+        ================================================== -->
+
+            <article class="project-item">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">
+                        Battery Management System for Microgrid
+                    </h3>
+
+                    <p class="project-description">
+                        Designed and simulated a Battery Management System
+                        for a microgrid using MATLAB/Simulink, focusing on
+                        battery State of Charge estimation and cell balancing.
+                        The project involved evaluating Li-ion battery
+                        characteristics and comparing different estimation
+                        and balancing techniques.
+                    </p>
+
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>Report</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+             FUTURE PROJECT
+        ================================================== -->
+
+
+            <article class="project-item">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-content">
+
+                    <h3 class="project-title">
+                        One Touch Women’s Safety Alarm
+                    </h3>
+
+                    <p class="project-description">
+                        Developed a GPS/GSM-based emergency alert device that sends the user's location to a
+                        pre-programmed SOS number when triggered. Implemented wireless communication using a 433 MHz RF
+                        module and Embedded C++ on Arduino.
+                    </p>
+
+                    <div class="project-links">
+
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <span>Report</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                        <a href="#" class="project-link" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SKILLS
+         
+         We'll build this later.
+    ====================================================== -->
+
+    <!--
+    <section id="skills">
+        Skills will be added here.
+    </section>
+    -->
+
+
+
+    <!-- =====================================================
+         CONTACT
+         
+         We'll build this later.
+    ====================================================== -->
+
+    <!--
+    <section id="contact">
+        Contact will be added here.
+    </section>
+    -->
+
+
+
+    <footer class="footer">
+        <p>© 2026 Abhinav Yellamelli. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
+
 
 </body>
 
