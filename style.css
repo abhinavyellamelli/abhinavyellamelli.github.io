@@ -25,6 +25,7 @@ body {
     color: #111111;
 }
 
+
 /* =========================================================
    CUSTOM SCROLLBAR — TEAL + PURPLE
 ========================================================= */
@@ -33,15 +34,9 @@ body {
     width: 14px;
 }
 
-
-/* Scrollbar background */
-
 ::-webkit-scrollbar-track {
     background: #eeeeee;
 }
-
-
-/* Normal scrollbar */
 
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom,
@@ -56,15 +51,13 @@ body {
     transition: background 0.5s ease;
 }
 
-
-/* Hover — reverse gradient */
-
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom,
             #8B5CF6 0%,
             #00F5D4 55%,
             #00C9A7 100%);
 }
+
 
 /* =========================================================
    HEADER
@@ -96,8 +89,7 @@ body {
 
     border-radius: 3rem;
 
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 
     z-index: 1000;
 }
@@ -156,7 +148,6 @@ body {
 /* NAVIGATION UNDERLINE */
 
 .nav-links li a::before {
-
     content: "";
 
     position: absolute;
@@ -186,27 +177,44 @@ body {
 
 
 /* =========================================================
-   GLOWING GITHUB BUTTON — TEAL + PURPLE
+   MOBILE MENU ICON
+========================================================= */
+
+#menu-icon {
+    display: none;
+
+    color: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   GLOWING GITHUB BUTTON
 ========================================================= */
 
 .visit-btn {
     position: relative;
 
     display: inline-flex;
+
     align-items: center;
     justify-content: center;
 
     padding: 0.75rem 1.6rem;
 
     border: none;
+
     border-radius: 3rem;
 
     color: white;
 
     font-size: 0.95rem;
+
     font-weight: 600;
 
-    text-decoration: none;
     white-space: nowrap;
 
     cursor: pointer;
@@ -226,13 +234,7 @@ body {
         box-shadow 0.4s ease;
 }
 
-
-/* =========================================================
-   HOVER — PURPLE TO TEAL
-========================================================= */
-
 .visit-btn:hover {
-
     background: linear-gradient(90deg,
             #8B5CF6,
             #00F5D4,
@@ -252,7 +254,6 @@ body {
 ========================================================= */
 
 .profile-layout {
-
     width: 100%;
 
     max-width: 1400px;
@@ -270,11 +271,10 @@ body {
 
 
 /* =========================================================
-   LEFT SIDE — SINGLE IMAGE
+   PROFILE IMAGE
 ========================================================= */
 
 .profile-image-container {
-
     position: sticky;
 
     top: 0;
@@ -294,7 +294,6 @@ body {
 /* IMAGE GLOW */
 
 .profile-image-container::before {
-
     content: "";
 
     position: absolute;
@@ -320,7 +319,6 @@ body {
 /* PROFILE IMAGE */
 
 .profile-image-container img {
-
     width: 320px;
 
     height: 320px;
@@ -340,7 +338,6 @@ body {
 }
 
 .profile-image-container img:hover {
-
     transform: scale(1.03);
 
     box-shadow:
@@ -362,7 +359,6 @@ body {
 ========================================================= */
 
 .home-section {
-
     min-height: 100vh;
 
     display: flex;
@@ -384,7 +380,6 @@ body {
 ========================================================= */
 
 .about-greeting {
-
     margin: 0 0 0.5rem 0;
 
     color: #555555;
@@ -400,14 +395,11 @@ body {
 ========================================================= */
 
 .about-name {
-
     margin: 0;
 
     color: #111111;
 
-    font-size: clamp(3rem,
-            5vw,
-            4.5rem);
+    font-size: clamp(3rem, 5vw, 4.5rem);
 
     font-weight: 700;
 
@@ -422,7 +414,6 @@ body {
 ========================================================= */
 
 .about-role {
-
     display: flex;
 
     flex-direction: column;
@@ -435,7 +426,6 @@ body {
 }
 
 .about-role p {
-
     margin: 0;
 
     color: #00A98F;
@@ -451,72 +441,10 @@ body {
 
 
 /* =========================================================
-   BUTTONS
-========================================================= */
-
-.about-buttons {
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 1rem;
-
-    margin-top: 1.5rem;
-}
-
-.about-button {
-
-    min-width: 135px;
-
-    padding: 0.8rem 1.6rem;
-
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    border: 2px solid #00A98F;
-
-    border-radius: 3rem;
-
-    background: white;
-
-    color: #222222;
-
-    font-size: 1rem;
-
-    font-weight: 500;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.about-button:hover {
-
-    color: #06201B;
-
-    border-color: transparent;
-
-    background: linear-gradient(to right,
-            #00C9A7,
-            #00F5D4);
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(0, 169, 143, 0.25);
-}
-
-
-/* =========================================================
    SOCIAL ICONS
 ========================================================= */
 
 .about-socials {
-
     display: flex;
 
     align-items: center;
@@ -528,7 +456,6 @@ body {
 }
 
 .about-social-link {
-
     width: 48px;
     height: 48px;
 
@@ -549,7 +476,6 @@ body {
 }
 
 .about-social-link i {
-
     font-size: 1.5rem;
 
     color: #222222;
@@ -558,7 +484,6 @@ body {
 }
 
 .about-social-link:hover {
-
     background: #00C9A7;
 
     border-color: #00C9A7;
@@ -573,11 +498,12 @@ body {
     color: white;
 }
 
+
 /* =========================================================
    CV ICON
 ========================================================= */
 
-.cv-icon span {
+.cv-icon {
     font-size: 0.9rem;
 
     font-weight: 700;
@@ -589,8 +515,7 @@ body {
     transition: 0.3s ease;
 }
 
-
-.cv-icon:hover span {
+.about-social-link:hover .cv-icon {
     color: white;
 }
 
@@ -600,10 +525,9 @@ body {
 ========================================================= */
 
 .about-section {
-
     min-height: 100vh;
 
-    padding: 3rem 2rem 4rem;
+    padding: 0.5rem 2rem 4rem;
 
     display: flex;
 
@@ -617,13 +541,10 @@ body {
 }
 
 
-/* =========================================================
-   ABOUT HEADING
-========================================================= */
+/* ABOUT HEADING */
 
 .about-section h2 {
-
-    margin: 0 0 0.3rem 0;
+    margin: 0 0 0.8rem 0;
 
     color: #111111;
 
@@ -636,20 +557,27 @@ body {
 
 
 /* =========================================================
-   ABOUT INTRODUCTION
+   ABOUT TEXT
 ========================================================= */
 
-.about-section>p {
+.about-text {
+    max-width: 750px;
 
-    margin: 0 0 0.3rem 0;
+    text-align: left;
+}
 
-    max-width: 650px;
+.about-text p {
+    margin: 0 0 1.2rem 0;
 
-    color: #555555;
+    font-size: 1.05rem;
 
-    font-size: 1rem;
+    line-height: 1.7;
 
-    line-height: 1.6;
+    color: #444444;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -658,7 +586,6 @@ body {
 ========================================================= */
 
 .about-block {
-
     width: 100%;
 
     padding: 0.9rem 1.2rem;
@@ -667,17 +594,13 @@ body {
 
     border-radius: 0 1rem 1rem 0;
 
-    background: rgba(0,
-            201,
-            167,
-            0.04);
+    background: rgba(0, 201, 167, 0.04);
 }
 
 
 /* BLOCK HEADING */
 
 .about-block h3 {
-
     margin: 0 0 0.35rem 0;
 
     color: #111111;
@@ -691,7 +614,6 @@ body {
 /* ICON */
 
 .about-block h3 i {
-
     margin-right: 0.5rem;
 
     color: #00A98F;
@@ -701,7 +623,6 @@ body {
 /* BLOCK TEXT */
 
 .about-block p {
-
     margin: 0 0 0.45rem 0;
 
     color: #666666;
@@ -715,24 +636,6 @@ body {
     margin-bottom: 0;
 }
 
-/* ================= ABOUT TEXT ================= */
-
-.about-text {
-    max-width: 750px;
-    text-align: left;
-}
-
-.about-text p {
-    margin: 0 0 1.2rem 0;
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #444444;
-}
-
-.about-text p:last-child {
-    margin-bottom: 0;
-}
-
 
 /* STRONG TEXT */
 
@@ -740,31 +643,22 @@ body {
     color: #333333;
 }
 
-/* =========================================================
-   REDUCE SPACE ABOVE ABOUT CONTENT
-========================================================= */
-
-.about-section {
-    padding-top: 0.5rem;
-}
-
-.about-section>h2 {
-    margin-top: 0;
-    margin-bottom: 0.8rem;
-}
 
 /* =========================================================
-   RESEARCH INTERESTS BULLET POINTS
+   RESEARCH INTERESTS
 ========================================================= */
 
 .about-block ul {
     list-style-type: disc;
+
     padding-left: 1.5rem;
+
     margin-top: 1rem;
 }
 
 .about-block ul li {
     display: list-item;
+
     list-style-type: disc;
 
     margin-bottom: 0.8rem;
@@ -774,141 +668,10 @@ body {
 
 .about-block ul li::marker {
     color: #00A98F;
+
     font-size: 1rem;
 }
 
-/* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .header {
-        gap: 2rem;
-    }
-
-
-    .profile-layout {
-
-        grid-template-columns: 1fr;
-
-        padding: 0 7%;
-    }
-
-
-    .profile-image-container {
-
-        position: relative;
-
-        top: auto;
-
-        height: auto;
-
-        min-height: 55vh;
-
-        padding-top: 8rem;
-    }
-
-
-    .content-container {
-        width: 100%;
-    }
-
-
-    .home-section {
-
-        min-height: 80vh;
-
-        padding-top: 3rem;
-    }
-
-
-    .about-section {
-
-        min-height: 80vh;
-
-        padding-top: 3rem;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .header {
-
-        width: 92%;
-
-        gap: 1rem;
-
-        padding: 0.7rem 1rem;
-    }
-
-
-    .nav-links {
-        display: none;
-    }
-
-
-    .visit-btn {
-
-        font-size: 0.85rem;
-
-        padding: 0.65rem 1rem;
-    }
-
-
-    .profile-image-container img {
-
-        width: 250px;
-
-        height: 250px;
-    }
-
-
-    .profile-image-container::before {
-
-        width: 280px;
-
-        height: 280px;
-    }
-
-
-    .about-name {
-
-        font-size: 2.7rem;
-
-        white-space: normal;
-    }
-
-
-    .about-role p {
-
-        font-size: 1.25rem;
-
-        white-space: normal;
-    }
-
-
-    .about-buttons {
-        flex-direction: column;
-    }
-
-
-    .about-section {
-
-        padding: 3rem 1.5rem 4rem;
-    }
-
-
-    .about-section h2 {
-
-        font-size: 2.7rem;
-    }
-}
 
 /* =========================================================
    EXPERIENCE SECTION
@@ -919,7 +682,6 @@ body {
 
     min-height: 100vh;
 
-    /* Reduced top spacing */
     padding: 7rem 2rem 5rem;
 
     background: #f5f6f7;
@@ -932,9 +694,7 @@ body {
 }
 
 
-/* =========================================================
-   EXPERIENCE CONTAINER
-========================================================= */
+/* EXPERIENCE CONTAINER */
 
 .experience-container {
     width: 100%;
@@ -949,9 +709,7 @@ body {
 }
 
 
-/* =========================================================
-   EXPERIENCE TITLE
-========================================================= */
+/* EXPERIENCE TITLE */
 
 .experience-title {
     margin: 0;
@@ -968,9 +726,7 @@ body {
 }
 
 
-/* =========================================================
-   EXPERIENCE CARD
-========================================================= */
+/* EXPERIENCE CARD */
 
 .experience-card {
     width: 100%;
@@ -998,13 +754,7 @@ body {
         border-color 0.3s ease;
 }
 
-
-/* =========================================================
-   CARD HOVER
-========================================================= */
-
 .experience-card:hover {
-
     transform: translateY(-4px);
 
     border-color: rgba(0, 201, 167, 0.35);
@@ -1014,14 +764,10 @@ body {
 }
 
 
-/* =========================================================
-   COMPANY LOGO CONTAINER
-========================================================= */
+/* EXPERIENCE LOGO */
 
 .experience-logo {
-
     width: 76px;
-
     height: 76px;
 
     flex-shrink: 0;
@@ -1029,7 +775,6 @@ body {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: #ffffff;
@@ -1041,39 +786,26 @@ body {
     overflow: hidden;
 }
 
-
-/* =========================================================
-   COMPANY LOGO
-========================================================= */
-
 .experience-logo img {
-
     width: 90%;
-
     height: 90%;
 
     object-fit: contain;
 }
 
 
-/* =========================================================
-   EXPERIENCE DETAILS
-========================================================= */
+/* EXPERIENCE DETAILS */
 
 .experience-details {
-
     flex: 1;
 
     min-width: 0;
 }
 
 
-/* =========================================================
-   JOB TITLE
-========================================================= */
+/* JOB TITLE */
 
 .experience-job-title {
-
     margin: 0;
 
     color: #111111;
@@ -1086,12 +818,9 @@ body {
 }
 
 
-/* =========================================================
-   COMPANY NAME
-========================================================= */
+/* COMPANY */
 
 .experience-company {
-
     margin: 0.3rem 0 0 0;
 
     color: #0088cc;
@@ -1104,12 +833,9 @@ body {
 }
 
 
-/* =========================================================
-   DATE + LOCATION
-========================================================= */
+/* DATE + LOCATION */
 
 .experience-meta {
-
     display: flex;
 
     align-items: center;
@@ -1128,9 +854,7 @@ body {
 }
 
 
-/* =========================================================
-   DESCRIPTION
-========================================================= */
+/* DESCRIPTION */
 
 .experience-description {
     margin: 0.8rem 0 0;
@@ -1150,6 +874,7 @@ body {
 
 .experience-description li {
     list-style: disc;
+
     margin-bottom: 0.4rem;
 }
 
@@ -1159,131 +884,12 @@ body {
 
 
 /* =========================================================
-   TABLET
-========================================================= */
-
-@media (max-width: 900px) {
-
-    .experience-section {
-
-        padding: 3rem 1.5rem 4rem;
-    }
-
-
-    .experience-container {
-
-        max-width: 90%;
-    }
-
-
-    .experience-title {
-
-        font-size: 3rem;
-    }
-
-
-    .experience-card {
-
-        gap: 1.3rem;
-
-        padding: 1.3rem;
-    }
-
-
-    .experience-job-title {
-
-        font-size: 22px;
-    }
-
-
-    .experience-description {
-
-        font-size: 16px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .experience-section {
-
-        padding: 2.5rem 1rem 4rem;
-    }
-
-
-    .experience-container {
-
-        max-width: 100%;
-    }
-
-
-    .experience-title {
-
-        font-size: 2.7rem;
-    }
-
-
-    .experience-card {
-
-        flex-direction: column;
-
-        gap: 1rem;
-
-        padding: 1.2rem;
-    }
-
-
-    .experience-logo {
-
-        width: 76px;
-
-        height: 76px;
-    }
-
-
-    .experience-job-title {
-
-        font-size: 21px;
-    }
-
-
-    .experience-company {
-
-        font-size: 17px;
-    }
-
-
-    .experience-meta {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 0.2rem;
-
-        font-size: 15px;
-    }
-
-
-    .experience-description {
-
-        font-size: 16px;
-
-        line-height: 1.55;
-    }
-
-}
-
-/* =========================================================
    PROJECTS SECTION
 ========================================================= */
 
 .projects-section {
     width: 100%;
+
     min-height: 100vh;
 
     padding: 8rem 2rem 6rem;
@@ -1291,53 +897,40 @@ body {
     background: #ffffff;
 
     display: flex;
+
     justify-content: center;
 
     scroll-margin-top: -70px;
 }
 
 
-/* =========================================================
-   PROJECTS CONTAINER
-========================================================= */
+/* PROJECTS CONTAINER */
 
 .projects-container {
     width: 100%;
+
     max-width: 1180px;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 1rem;
 }
 
 
-/* =========================================================
-   PROJECTS HEADER
-========================================================= */
+/* PROJECTS HEADER */
 
 .projects-header {
     display: flex;
+
     flex-direction: column;
 
     gap: 0.4rem;
 }
 
 
-.projects-label {
-    margin: 0;
-
-    color: #00A98F;
-
-    font-size: 1rem;
-
-    font-weight: 600;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.15rem;
-}
-
+/* PROJECTS TITLE */
 
 .projects-title {
     margin: 0;
@@ -1352,9 +945,7 @@ body {
 }
 
 
-/* =========================================================
-   PROJECT ITEM
-========================================================= */
+/* PROJECT ITEM */
 
 .project-item {
     width: 100%;
@@ -1365,7 +956,7 @@ body {
 
     gap: 2rem;
 
-    padding: 1.0rem 0;
+    padding: 1rem 0;
 
     border-top: 1px solid #e5e7e9;
 
@@ -1373,9 +964,7 @@ body {
 }
 
 
-/* =========================================================
-   PROJECT NUMBER
-========================================================= */
+/* PROJECT NUMBER */
 
 .project-number {
     color: #00A98F;
@@ -1390,24 +979,20 @@ body {
 }
 
 
-/* =========================================================
-   PROJECT CONTENT
-========================================================= */
+/* PROJECT CONTENT */
 
 .project-content {
     width: 100%;
-    max-width: none;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 0.7rem;
 }
 
 
-/* =========================================================
-   PROJECT TITLE
-========================================================= */
+/* PROJECT TITLE */
 
 .project-title {
     margin: 0;
@@ -1423,20 +1008,15 @@ body {
     transition: 0.3s ease;
 }
 
-
 .project-item:hover .project-title {
     color: #00A98F;
 }
 
 
-/* =========================================================
-   PROJECT DESCRIPTION
-========================================================= */
+/* PROJECT DESCRIPTION */
 
 .project-description {
     margin: 0;
-
-    max-width: none;
 
     color: #555555;
 
@@ -1448,9 +1028,7 @@ body {
 }
 
 
-/* =========================================================
-   PROJECT LINKS
-========================================================= */
+/* PROJECT LINKS */
 
 .project-links {
     display: flex;
@@ -1461,7 +1039,6 @@ body {
 
     margin-top: 0.5rem;
 }
-
 
 .project-link {
     display: inline-flex;
@@ -1484,18 +1061,14 @@ body {
 
     font-weight: 500;
 
-    text-decoration: none;
-
     transition: 0.3s ease-in-out;
 }
-
 
 .project-link i:first-child {
     color: #00A98F;
 
     font-size: 1rem;
 }
-
 
 .project-link i:last-child {
     font-size: 0.7rem;
@@ -1504,7 +1077,6 @@ body {
 
     transition: 0.3s ease;
 }
-
 
 .project-link:hover {
     background: #00A98F;
@@ -1519,11 +1091,9 @@ body {
         0 6px 18px rgba(0, 169, 143, 0.18);
 }
 
-
 .project-link:hover i:first-child {
     color: #ffffff;
 }
-
 
 .project-link:hover i:last-child {
     opacity: 1;
@@ -1533,10 +1103,193 @@ body {
 
 
 /* =========================================================
-   TABLET
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+
+    height: 5rem;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    background: #ffffff;
+
+    color: #555555;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* COPYRIGHT */
+
+footer p {
+    margin: 0;
+
+    font-size: 0.9rem;
+
+    font-weight: 400;
+
+    color: #777777;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   TABLET — 1024px
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        width: 92%;
+
+        gap: 2rem;
+
+        padding: 0.75rem 1.4rem;
+    }
+
+    .nav-links {
+        gap: 1.3rem;
+    }
+
+    .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    .visit-btn {
+        padding: 0.7rem 1.2rem;
+
+        font-size: 0.9rem;
+    }
+
+
+    .profile-layout {
+        padding: 0 6%;
+    }
+
+
+    .profile-image-container img {
+        width: 300px;
+        height: 300px;
+    }
+
+
+    .profile-image-container::before {
+        width: 330px;
+        height: 330px;
+    }
+
+
+    .about-name {
+        font-size: clamp(2.8rem, 5vw, 4rem);
+    }
+
+
+    .about-role p {
+        font-size: 1.5rem;
+    }
+
+
+    .experience-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .projects-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET — 900px
 ========================================================= */
 
 @media (max-width: 900px) {
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+
+        padding: 0 7%;
+    }
+
+
+    .profile-image-container {
+        position: relative;
+
+        top: auto;
+
+        height: auto;
+
+        min-height: 55vh;
+
+        padding-top: 8rem;
+    }
+
+
+    .content-container {
+        width: 100%;
+    }
+
+
+    .home-section {
+        min-height: 80vh;
+
+        padding-top: 3rem;
+    }
+
+
+    .about-section {
+        min-height: 80vh;
+
+        padding-top: 3rem;
+    }
+
+
+    .experience-section {
+        padding: 3rem 1.5rem 4rem;
+    }
+
+
+    .experience-container {
+        max-width: 90%;
+    }
+
+
+    .experience-title {
+        font-size: 3rem;
+    }
+
+
+    .experience-card {
+        gap: 1.3rem;
+
+        padding: 1.3rem;
+    }
+
+
+    .experience-job-title {
+        font-size: 22px;
+    }
+
+
+    .experience-description {
+        font-size: 16px;
+    }
+
 
     .projects-section {
         padding: 4rem 1.5rem 5rem;
@@ -1575,10 +1328,220 @@ body {
 
 
 /* =========================================================
-   MOBILE
+   MOBILE — 768px
 ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        width: 92%;
+
+        top: 0.7rem;
+
+        padding: 0.7rem 1.2rem;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: space-between;
+
+        gap: 1rem;
+    }
+
+
+    .logo {
+        font-size: 1rem;
+    }
+
+
+    #menu-icon {
+        display: block;
+
+        color: white;
+
+        font-size: 1.5rem;
+
+        cursor: pointer;
+    }
+
+
+    .nav-links {
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 1.2rem;
+
+        padding: 1.5rem 0;
+
+        margin-top: 0.7rem;
+
+        background: white;
+
+        border-radius: 1rem;
+
+        box-shadow:
+            0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+
+    .nav-links.active {
+        display: flex;
+    }
+
+
+    .nav-links li a {
+        font-size: 1rem;
+
+        color: #222222;
+    }
+
+
+    .visit-btn {
+        display: none;
+    }
+
+
+    /* ================= PROFILE ================= */
+
+    .profile-layout {
+        padding: 0 5%;
+    }
+
+
+    .profile-image-container {
+        min-height: 55vh;
+
+        padding-top: 7rem;
+    }
+
+
+    .profile-image-container img {
+        width: 250px;
+
+        height: 250px;
+    }
+
+
+    .profile-image-container::before {
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    /* ================= HOME ================= */
+
+    .home-section {
+        min-height: auto;
+
+        padding: 3rem 1rem 5rem;
+    }
+
+
+    .about-name {
+        font-size: 2.7rem;
+
+        white-space: normal;
+    }
+
+
+    .about-role p {
+        font-size: 1.25rem;
+
+        white-space: normal;
+    }
+
+
+    /* ================= ABOUT ================= */
+
+    .about-section {
+        min-height: auto;
+
+        padding: 3rem 1.5rem 4rem;
+    }
+
+
+    .about-section h2 {
+        font-size: 2.7rem;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience-section {
+        padding: 2.5rem 1rem 4rem;
+    }
+
+
+    .experience-container {
+        max-width: 100%;
+    }
+
+
+    .experience-title {
+        font-size: 2.7rem;
+    }
+
+
+    .experience-card {
+        flex-direction: column;
+
+        gap: 1rem;
+
+        padding: 1.2rem;
+    }
+
+
+    .experience-logo {
+        width: 76px;
+
+        height: 76px;
+    }
+
+
+    .experience-job-title {
+        font-size: 21px;
+    }
+
+
+    .experience-company {
+        font-size: 17px;
+    }
+
+
+    .experience-meta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 0.2rem;
+
+        font-size: 15px;
+    }
+
+
+    .experience-description {
+        font-size: 16px;
+
+        line-height: 1.55;
+    }
+
+
+    /* ================= PROJECTS ================= */
 
     .projects-section {
         padding: 3rem 1rem 4rem;
@@ -1636,89 +1599,8 @@ body {
         padding: 0.6rem 0.9rem;
     }
 
-}
 
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-    width: 100%;
-
-    height: 5rem;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.5rem;
-
-    background: #ffffff;
-
-    color: #555555;
-
-    border-top: 1px solid #e5e5e5;
-}
-
-
-/* Footer Links */
-
-footer ul {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 2rem;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-
-footer ul li a {
-    color: #333333;
-
-    font-size: 0.9rem;
-
-    font-weight: 500;
-
-    text-decoration: none;
-
-    transition: 0.3s ease;
-}
-
-
-footer ul li a:hover {
-    color: #00A98F;
-}
-
-
-/* Copyright */
-
-.copyright {
-    margin: 0;
-
-    font-size: 0.9rem;
-
-    font-weight: 400;
-
-    color: #777777;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
+    /* ================= FOOTER ================= */
 
     footer {
         height: 4.5rem;
@@ -1727,350 +1609,9 @@ footer ul li a:hover {
     }
 
 
-    footer ul {
-        gap: 1rem;
-
-        flex-wrap: wrap;
-    }
-
-
-    footer ul li a {
-        font-size: 0.85rem;
-    }
-
-
-    .copyright {
+    footer p {
         font-size: 0.8rem;
     }
-
-}
-
-/* =========================================================
-   RESPONSIVE DESIGN
-========================================================= */
-
-
-/* =========================================================
-   TABLET — 1024px
-========================================================= */
-
-@media (max-width: 1024px) {
-
-    /* ================= HEADER ================= */
-
-    header {
-        width: 92%;
-        gap: 2rem;
-        padding: 0.75rem 1.4rem;
-    }
-
-    .nav-links {
-        gap: 1.3rem;
-    }
-
-    .nav-links li a {
-        font-size: 0.9rem;
-    }
-
-    .visit-btn {
-        padding: 0.7rem 1.2rem;
-        font-size: 0.9rem;
-    }
-
-
-    /* ================= HOME / ABOUT ================= */
-
-    .about {
-        padding: 7rem 6% 5rem;
-    }
-
-    .about-container {
-        gap: 4rem;
-    }
-
-    .about-image {
-        width: 300px;
-        height: 300px;
-    }
-
-    .about-image img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .about-name {
-        font-size: clamp(2.8rem, 5vw, 4rem);
-    }
-
-    .about-role p {
-        font-size: 1.5rem;
-    }
-
-
-    /* ================= EXPERIENCE ================= */
-
-    .experience {
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-
-    .experience-container {
-        max-width: 100%;
-    }
-
-
-    /* ================= PROJECTS ================= */
-
-    .projects {
-        padding-left: 6%;
-        padding-right: 6%;
-    }
-
-    .project-container {
-        max-width: 100%;
-    }
-
-    .project-content {
-        width: 100%;
-    }
-
-}
-
-
-/* =========================================================
-   MOBILE — 768px
-========================================================= */
-
-/* ================= MOBILE HEADER ================= */
-
-@media (max-width: 768px) {
-
-    header {
-        width: 92%;
-        top: 0.7rem;
-
-        padding: 0.7rem 1.2rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        gap: 1rem;
-    }
-
-    .logo {
-        font-size: 1rem;
-    }
-
-    /* Hamburger icon */
-
-    #menu-icon {
-        display: block;
-        font-size: 1.5rem;
-        cursor: pointer;
-        color: #111111;
-    }
-
-    /* Mobile navigation */
-
-    .nav-links {
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        display: none;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 1.2rem;
-
-        padding: 1.5rem 0;
-
-        margin-top: 0.7rem;
-
-        background: white;
-
-        border-radius: 1rem;
-
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    /* When menu is opened */
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li a {
-        font-size: 1rem;
-    }
-
-    /* Hide GitHub button on mobile */
-
-    .visit-btn {
-        display: none;
-    }
-
-}
-
-
-/* ================= MOBILE HOME / ABOUT ================= */
-
-@media (max-width: 768px) {
-
-    .about {
-        min-height: auto;
-        height: auto;
-
-        padding: 6rem 1.5rem 3rem;
-    }
-
-    .about-container {
-        min-height: auto;
-
-        height: auto;
-
-        flex-direction: column;
-
-        gap: 2rem;
-    }
-
-}
-
-
-/* ================= EXPERIENCE ================= */
-
-.experience {
-    padding: 5rem 1.5rem 3rem;
-}
-
-.section-title {
-    font-size: 2.3rem;
-}
-
-
-.experience-card {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 1rem;
-
-    padding: 1.2rem;
-}
-
-
-.experience-logo {
-    width: 65px;
-    height: 65px;
-}
-
-
-.experience-logo img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-.experience-content {
-    width: 100%;
-}
-
-
-.experience-title {
-    font-size: 1.5rem;
-}
-
-
-.experience-company {
-    font-size: 1.1rem;
-}
-
-
-.experience-meta {
-    font-size: 0.9rem;
-}
-
-
-.experience-description {
-    font-size: 0.95rem;
-
-    line-height: 1.6;
-}
-
-
-/* ================= PROJECTS ================= */
-
-.projects {
-    padding: 5rem 1.5rem 3rem;
-}
-
-
-.project-card {
-    padding: 1.3rem;
-}
-
-
-.project-content {
-    width: 100%;
-    max-width: 100%;
-}
-
-
-.project-title {
-    font-size: 1.5rem;
-}
-
-
-.project-description {
-    font-size: 0.95rem;
-
-    line-height: 1.6;
-
-    max-width: 100%;
-}
-
-
-.project-links {
-    flex-wrap: wrap;
-
-    gap: 0.7rem;
-}
-
-
-/* ================= FOOTER ================= */
-
-footer {
-    height: auto;
-
-    min-height: 4.5rem;
-
-    padding: 1rem;
-}
-
-
-footer ul {
-    gap: 1rem;
-
-    flex-wrap: wrap;
-}
-
-
-footer ul li a {
-    font-size: 0.85rem;
-}
-
-
-.copyright {
-    font-size: 0.8rem;
-
-    text-align: center;
-}
 
 }
 
@@ -2083,37 +1624,43 @@ footer ul li a {
 
     /* ================= HEADER ================= */
 
-    header {
+    .header {
         width: 94%;
 
         padding: 0.65rem 1rem;
     }
 
+
     .logo {
         font-size: 1rem;
     }
+
 
     #menu-icon {
         font-size: 1.5rem;
     }
 
 
-    /* ================= HOME / ABOUT ================= */
+    /* ================= PROFILE IMAGE ================= */
 
-    .about {
-        padding: 6.5rem 1rem 3rem;
-    }
-
-
-    .about-image {
+    .profile-image-container img {
         width: 210px;
+
         height: 210px;
     }
 
 
-    .about-image img {
-        width: 195px;
-        height: 195px;
+    .profile-image-container::before {
+        width: 240px;
+
+        height: 240px;
+    }
+
+
+    /* ================= HOME ================= */
+
+    .home-section {
+        padding: 2.5rem 1rem 4rem;
     }
 
 
@@ -2140,6 +1687,7 @@ footer ul li a {
 
     .about-social-link {
         width: 42px;
+
         height: 42px;
     }
 
@@ -2154,15 +1702,34 @@ footer ul li a {
     }
 
 
-    /* ================= EXPERIENCE ================= */
+    /* ================= ABOUT ================= */
 
-    .experience {
-        padding: 4rem 1rem 2.5rem;
+    .about-section {
+        padding: 2rem 1rem 3rem;
     }
 
 
-    .section-title {
-        font-size: 2rem;
+    .about-section h2 {
+        font-size: 2.3rem;
+    }
+
+
+    .about-text p {
+        font-size: 0.95rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* ================= EXPERIENCE ================= */
+
+    .experience-section {
+        padding: 2.5rem 1rem 3rem;
+    }
+
+
+    .experience-title {
+        font-size: 2.3rem;
     }
 
 
@@ -2175,22 +1742,23 @@ footer ul li a {
 
     .experience-logo {
         width: 60px;
+
         height: 60px;
     }
 
 
-    .experience-title {
-        font-size: 1.3rem;
+    .experience-job-title {
+        font-size: 20px;
     }
 
 
     .experience-company {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
 
     .experience-meta {
-        font-size: 0.85rem;
+        font-size: 14px;
     }
 
 
@@ -2203,15 +1771,13 @@ footer ul li a {
 
     /* ================= PROJECTS ================= */
 
-    .projects {
-        padding: 4rem 1rem 2.5rem;
+    .projects-section {
+        padding: 2.5rem 1rem 3rem;
     }
 
 
-    .project-card {
-        padding: 1rem;
-
-        border-radius: 12px;
+    .projects-title {
+        font-size: 2.3rem;
     }
 
 
@@ -2241,7 +1807,7 @@ footer ul li a {
     }
 
 
-    .copyright {
+    footer p {
         font-size: 0.75rem;
     }
 
