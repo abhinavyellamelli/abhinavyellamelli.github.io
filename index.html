@@ -44,10 +44,8 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#leadership">Leadership</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <!-- Add back when the section exists:
-                <li><a href="#publications">Publications</a></li>
-                -->
             </ul>
 
             <div class="nav-actions">
@@ -91,8 +89,8 @@
                     <p class="hero-lead reveal">
                         Electrical &amp; Electronics engineer from VNIT Nagpur with
                         almost two years of plant experience at Jindal Stainless.
-                        Now focused on battery management systems, EV powertrains
-                        and power electronics.
+                        At IIT Madras I design SiC DC/DC converters, model and balance
+                        battery packs, and build embedded motor control on STM32.
                     </p>
 
                     <div class="hero-cta reveal">
@@ -129,22 +127,6 @@
                 <div class="hero-visual reveal">
                     <div class="photo-frame">
                         <img src="Profile Pic.jpeg" alt="Portrait of Abhinav Yellamelli" width="420" height="420">
-                    </div>
-
-                    <div class="hero-card hero-card-top">
-                        <i class="fa-solid fa-car-battery"></i>
-                        <div>
-                            <strong>BMS</strong>
-                            <span>SOC · Cell balancing</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-card hero-card-bottom">
-                        <i class="fa-solid fa-industry"></i>
-                        <div>
-                            <strong>~2 yrs</strong>
-                            <span>Industry experience</span>
-                        </div>
                     </div>
                 </div>
 
@@ -186,9 +168,11 @@
                         </p>
                         <p>
                             At IIT Madras I'm building deeper expertise in EV technology.
-                            Alongside coursework I work on simulations, embedded systems
-                            and technical projects, and I enjoy turning what I learn into
-                            practical engineering solutions.
+                            This semester I designed a 3.6 kW three-port SiC DC/DC converter
+                            for an EV auxiliary power module, modelled charging and cell
+                            balancing of an LFP battery pack from lab data, and built
+                            closed-loop DC motor speed control on an STM32. I also serve
+                            as Deputy Placement Coordinator for my department.
                         </p>
 
                         <div class="stats">
@@ -201,8 +185,8 @@
                                 <span class="stat-label">Plant exposure</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-num">4</span>
-                                <span class="stat-label">Furnaces converted to natural gas</span>
+                                <span class="stat-num">5</span>
+                                <span class="stat-label">Engineering projects</span>
                             </div>
                         </div>
                     </div>
@@ -224,7 +208,17 @@
                                 <li>
                                     <span class="edu-date">2020 – 2024</span>
                                     <strong>B.Tech, Electrical &amp; Electronics Engineering</strong>
-                                    <span>Visvesvaraya National Institute of Technology, Nagpur</span>
+                                    <span>Visvesvaraya National Institute of Technology, Nagpur · CGPA 6.87/10</span>
+                                </li>
+                                <li>
+                                    <span class="edu-date">2018 – 2020</span>
+                                    <strong>Intermediate (11th–12th)</strong>
+                                    <span>Narayana Junior College, Vijayawada · CGPA 8.54/10</span>
+                                </li>
+                                <li>
+                                    <span class="edu-date">2017 – 2018</span>
+                                    <strong>10th Standard</strong>
+                                    <span>Narayana Olympiad School, Vijayawada · CGPA 9.7/10</span>
                                 </li>
                             </ol>
                         </div>
@@ -359,7 +353,7 @@
                                 </div>
                             </div>
                             <ul class="tl-points">
-                                <li>Studied the 132 kV and 32 kV Gas Insulated Switchgear (GIS) network used in refinery
+                                <li>Studied the 132 kV and 33 kV Gas Insulated Switchgear (GIS) network used in refinery
                                     power distribution.</li>
                                 <li>Compared GIS and AIS substations on reliability, space use, maintenance and
                                     operational safety.</li>
@@ -411,78 +405,119 @@
 
                 <div class="section-head reveal">
                     <span class="section-label">03 / Projects</span>
-                    <h2 class="section-title">Selected projects</h2>
+                    <h2 class="section-title">Projects</h2>
                 </div>
 
-                <div class="projects-grid">
+                <!-- ===== IIT Madras ===== -->
+                <h3 class="project-group reveal">2026 · IIT Madras</h3>
 
-                    <!-- Project 01 -->
-                    <article class="project-card reveal">
-                        <div class="project-top">
-                            <span class="project-num">01</span>
-                            <span class="project-icon"><i class="fa-solid fa-car-battery"></i></span>
+                <div class="project-list">
+
+                    <article class="project-row reveal">
+                        <div class="project-thumb">
+                            <!-- To use a picture instead of the icon, replace the <i> line with:
+                                 <img src="Assets/converter.png" alt="Converter"> -->
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>DC/DC Converter</span>
                         </div>
-
-                        <h3 class="project-title">Battery Management System for Microgrid</h3>
-
-                        <p class="project-desc">
-                            Designed and simulated a Battery Management System for a microgrid
-                            in MATLAB/Simulink, focusing on State of Charge estimation and cell
-                            balancing. Evaluated Li-ion battery characteristics and compared
-                            different estimation and balancing techniques.
-                        </p>
-
-                        <div class="tags">
-                            <span>MATLAB</span><span>Simulink</span><span>SOC Estimation</span><span>Cell
-                                Balancing</span>
-                        </div>
-
-                        <div class="project-links">
-                            <a href="Assets/BMS_Project_Report.pdf" class="link-btn" target="_blank"
-                                rel="noopener noreferrer">
-                                <i class="fa-regular fa-file-lines"></i> Report
-                                <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
-                            </a>
-                            <a href="https://github.com/abhinavyellamelli/Battery-Management-System-for-Microgrid"
-                                class="link-btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i> Code
-                                <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
-                            </a>
+                        <div class="project-info">
+                            <h3 class="project-title">Three-Port SiC DC/DC Converter for EV Auxiliary Power</h3>
+                            <p class="project-meta">ED5023 Power Converter Design · Jul–Nov 2026</p>
+                            <p class="project-desc">
+                                Design of a 3.6 kW dual-active-bridge converter that supplies both the
+                                48 V and 12 V buses of an EV from the high-voltage traction battery,
+                                using SiC MOSFETs, with simulation in PLECS and the PCB in Altium.
+                            </p>
+                            <div class="project-links">
+                                <a href="Assets/ED5023_ThreePort_DCDC_Converter.pdf" target="_blank"
+                                    rel="noopener noreferrer">Report</a>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project 02 -->
-                    <article class="project-card reveal">
-                        <div class="project-top">
-                            <span class="project-num">02</span>
-                            <span class="project-icon"><i class="fa-solid fa-location-crosshairs"></i></span>
+                    <article class="project-row reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-battery-half"></i>
+                            <span>Cell Balancing</span>
                         </div>
-
-                        <h3 class="project-title">One-Touch Women's Safety Alarm</h3>
-
-                        <p class="project-desc">
-                            Built a GPS/GSM-based emergency alert device that sends the user's
-                            location to a pre-programmed SOS number when triggered. Implemented
-                            wireless communication with a 433 MHz RF module and Embedded C++ on
-                            Arduino.
-                        </p>
-
-                        <div class="tags">
-                            <span>Arduino</span><span>Embedded C++</span><span>GPS/GSM</span><span>433 MHz RF</span>
+                        <div class="project-info">
+                            <h3 class="project-title">LFP Battery Pack Charging &amp; Cell Balancing</h3>
+                            <p class="project-meta">ED5361 Energy Storage &amp; Conversion · Jul–Nov 2026</p>
+                            <p class="project-desc">
+                                Comparison of charging methods and passive vs active cell balancing on a
+                                four-cell LFP battery pack, using a Simscape cell model built from lab
+                                test data, including the effect on efficiency and battery ageing.
+                            </p>
+                            <div class="project-links">
+                                <a href="Assets/ED5361_LFP_Charging_Balancing.pdf" target="_blank"
+                                    rel="noopener noreferrer">Report</a>
+                            </div>
                         </div>
+                    </article>
 
-                        <!-- Add real links here, then remove the comment markers:
-                        <div class="project-links">
-                            <a href="Assets/YOUR_REPORT.pdf" class="link-btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-regular fa-file-lines"></i> Report
-                                <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
-                            </a>
-                            <a href="https://github.com/abhinavyellamelli/YOUR_REPO" class="link-btn" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-github"></i> Code
-                                <i class="fa-solid fa-arrow-up-right-from-square ext"></i>
-                            </a>
+                    <article class="project-row reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Motor Control</span>
                         </div>
-                        -->
+                        <div class="project-info">
+                            <h3 class="project-title">DC Motor Speed Control using STM32</h3>
+                            <p class="project-meta">ED5211 E-Mobility Lab · Jul–Nov 2026</p>
+                            <p class="project-desc">
+                                Testing a 12 V DC geared motor and building closed-loop speed control on
+                                an STM32 using MATLAB/Simulink, with feedforward compensation and
+                                sensorless speed estimation.
+                            </p>
+                            <div class="project-links">
+                                <a href="Assets/ED5211_DC_Motor_Control_STM32.pdf" target="_blank"
+                                    rel="noopener noreferrer">Report</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- ===== VNIT Nagpur ===== -->
+                <h3 class="project-group reveal">B.Tech · VNIT Nagpur</h3>
+
+                <div class="project-list">
+
+                    <article class="project-row reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-car-battery"></i>
+                            <span>BMS</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Battery Management System for Microgrid</h3>
+                            <p class="project-meta">B.Tech Project</p>
+                            <p class="project-desc">
+                                A battery management system for a microgrid in MATLAB/Simulink, comparing
+                                Coulomb Counting and Kalman Filter SOC estimation, and passive and active
+                                cell balancing methods.
+                            </p>
+                            <div class="project-links">
+                                <a href="Assets/BMS_Project_Report.pdf" target="_blank"
+                                    rel="noopener noreferrer">Report</a>
+                                <span class="dot">·</span>
+                                <a href="https://github.com/abhinavyellamelli/Battery-Management-System-for-Microgrid"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-row reveal">
+                        <div class="project-thumb">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <span>Safety Alarm</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">One-Touch Women's Safety Alarm</h3>
+                            <p class="project-meta">EEL330 Microcontrollers · Course Project</p>
+                            <p class="project-desc">
+                                An Arduino Nano emergency device that sends the user's GPS location to a
+                                saved SOS number over GSM at the press of a button, with a 433 MHz RF link.
+                            </p>
+                        </div>
                     </article>
 
                 </div>
@@ -493,8 +528,6 @@
 
         <!-- =====================================================
              SKILLS
-             (Built from tools mentioned in your experience and
-             projects — edit freely.)
         ====================================================== -->
 
         <section id="skills" class="section section-alt">
@@ -507,35 +540,97 @@
 
                 <div class="skills-grid">
 
-                    <div class="card skill-card reveal">
-                        <h3 class="card-title"><i class="fa-solid fa-wave-square"></i> Simulation &amp; Modelling</h3>
-                        <div class="tags">
-                            <span>MATLAB</span><span>Simulink</span><span>Battery modelling</span><span>SOC
-                                estimation</span>
+                    <div class="skill-box reveal">
+                        <h3 class="skill-box-title">Languages</h3>
+                        <div class="skill-pills">
+                            <span class="pill"><i class="fa-solid fa-c"></i> C</span>
+                            <span class="pill"><i class="fa-solid fa-microchip"></i> Embedded C</span>
+                            <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
                         </div>
                     </div>
 
-                    <div class="card skill-card reveal">
-                        <h3 class="card-title"><i class="fa-solid fa-microchip"></i> Embedded Systems</h3>
-                        <div class="tags">
-                            <span>Arduino</span><span>Embedded C++</span><span>GPS/GSM modules</span><span>RF
-                                communication</span>
+                    <div class="skill-box reveal">
+                        <h3 class="skill-box-title">Embedded Systems</h3>
+                        <div class="skill-pills">
+                            <span class="pill"><i class="fa-solid fa-microchip"></i> STM32 Nucleo</span>
+                            <span class="pill"><i class="fa-solid fa-sliders"></i> STM32CubeMX</span>
+                            <span class="pill"><i class="fa-solid fa-memory"></i> TI C2000 (TMS320F28379D)</span>
+                            <span class="pill"><i class="fa-solid fa-plug"></i> Arduino Nano</span>
                         </div>
                     </div>
 
-                    <div class="card skill-card reveal">
-                        <h3 class="card-title"><i class="fa-solid fa-bolt"></i> Power &amp; Electrical</h3>
-                        <div class="tags">
-                            <span>HT/LT switchgear</span><span>Transformers</span><span>Induction
-                                motors</span><span>VFDs</span><span>GIS / AIS</span><span>Protection schemes</span>
+                    <div class="skill-box reveal">
+                        <h3 class="skill-box-title">Simulation Tools</h3>
+                        <div class="skill-pills">
+                            <span class="pill"><i class="fa-solid fa-wave-square"></i> MATLAB / Simulink</span>
+                            <span class="pill"><i class="fa-solid fa-car-battery"></i> Simscape</span>
+                            <span class="pill"><i class="fa-solid fa-bolt"></i> PLECS</span>
+                            <span class="pill"><i class="fa-solid fa-magnet"></i> ANSYS Maxwell</span>
+                            <span class="pill"><i class="fa-solid fa-chart-line"></i> LTspice</span>
+                            <span class="pill"><i class="fa-solid fa-diagram-project"></i> NI Multisim</span>
                         </div>
                     </div>
 
-                    <div class="card skill-card reveal">
-                        <h3 class="card-title"><i class="fa-solid fa-gears"></i> Industrial</h3>
+                    <div class="skill-box reveal">
+                        <h3 class="skill-box-title">PCB Design</h3>
+                        <div class="skill-pills">
+                            <span class="pill"><i class="fa-solid fa-microchip"></i> Altium Designer</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             LEADERSHIP & ACTIVITIES
+        ====================================================== -->
+
+        <section id="leadership" class="section">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-label">05 / Leadership</span>
+                    <h2 class="section-title">Leadership &amp; activities</h2>
+                </div>
+
+                <div class="leader-grid">
+
+                    <div class="card reveal">
+                        <h3 class="card-title"><i class="fa-solid fa-briefcase"></i> Deputy Placement Coordinator</h3>
+                        <p class="card-meta">Dept. of Engineering Design, IIT Madras · 2026 – Present</p>
+                        <ul class="tl-points">
+                            <li>Coordinate placement and internship activities for M.Tech students, working with
+                                students, the placement office and recruiters.</li>
+                            <li>Support recruiter outreach, scheduling and recruitment drives across automotive, EV
+                                and related engineering domains.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card reveal">
+                        <h3 class="card-title"><i class="fa-solid fa-masks-theater"></i> Cultural Secretary</h3>
+                        <p class="card-meta">Dept. of EEE, VNIT Nagpur · 2021 – 2023</p>
+                        <ul class="tl-points">
+                            <li>Organized 15+ cultural events with 500+ participants, coordinating volunteers,
+                                logistics and event execution.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card reveal">
+                        <h3 class="card-title"><i class="fa-solid fa-medal"></i> Inline Roller Hockey</h3>
+                        <p class="card-meta">State-Level Championships · 2014 – 2015</p>
+                        <ul class="tl-points">
+                            <li>Won 2 Gold and 1 Silver medals at the State-Level Inline Roller Hockey
+                                Championships.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card reveal">
+                        <h3 class="card-title"><i class="fa-solid fa-person-skating"></i> Outside work</h3>
                         <div class="tags">
-                            <span>E&amp;I maintenance</span><span>MCC</span><span>Instrument
-                                calibration</span><span>SAP</span><span>Industrial safety</span>
+                            <span>Inline skating</span><span>Travelling</span><span>Music</span><span>Fitness</span>
                         </div>
                     </div>
 
@@ -552,7 +647,7 @@
         <section id="contact" class="section contact">
             <div class="container">
                 <div class="contact-box reveal">
-                    <span class="section-label">05 / Contact</span>
+                    <span class="section-label">06 / Contact</span>
                     <h2 class="contact-title">Let's talk about EVs, batteries or power electronics.</h2>
                     <p class="contact-lead">
                         I'm open to internships, research collaborations and project
